@@ -1,15 +1,15 @@
 # x61keys
-An application to allow the Thinkpad x61 volume and 'ThinkVantage' buttons to be functional.
+A small program to allow the Thinkpad x61 volume and 'ThinkVantage' buttons to be functional under linux.
 
 The volume keys are now functional.
 
-To run just compile volume/main.cpp with the command:
+To run just compile main.cpp with the command:
 ```
-gcc ./volume/main.cpp
+make
 ```
-and run a.out as root with:
+and install with:
 ```
-sudo a.out
+make install
 ```
 
-Presssing the volume up/down keys will adjust the alsa volume and the mute key will set it to 0.
+You can set commands to be run when certain buttons are pressed in the config file, by default the volume keys are mapped to their default fuctions in alsa.
